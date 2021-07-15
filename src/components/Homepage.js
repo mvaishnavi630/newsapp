@@ -6,7 +6,7 @@ import {
   setSignedIn,
   setUserData,
 } from "../features/userSlice";
-
+import Button from '@material-ui/core/Button';
 import "../styling/home.css";
 
 const Homepage = () => {
@@ -21,24 +21,33 @@ const Homepage = () => {
 
   return (
     <div className="home__page" style={{ display: isSignedIn ? "none" : "" }}>
-      {!isSignedIn ? (
+      {!isSignedIn && (
         <div className="login__message">
-          <h2>📗</h2>
-          <h1>A Readers favourite place!</h1>
+          <h2>Blogs App</h2>
+         
           <p>
-            We provide high quality online resource for reading blogs. Just sign
+            Website provides high quality online resource for reading blogs. Just sign
             up and start reading some quality blogs.
           </p>
           <GoogleLogin
             clientId="617126449684-2ujtp3osf86ledjs8ql6shvtgl9oel0e.apps.googleusercontent.com"
             render={(renderProps) => (
-              <button
-                onClick={renderProps.onClick}
+
+             <Button  onClick={renderProps.onClick}
+             style={{margin: '0 auto', display: "flex"}}
                 disabled={renderProps.disabled}
-                className="login__button"
-              >
-                Login with Google
-              </button>
+                className="login__button" 
+                variant="contained" color="primary">
+          Login with Google
+                  </Button>
+
+              // <button
+              //   onClick={renderProps.onClick}
+              //   disabled={renderProps.disabled}
+              //   className="login__button"
+              // >
+              //   Login with Google
+              // </button>
             )}
             onSuccess={login}
             onFailure={login}
@@ -46,8 +55,6 @@ const Homepage = () => {
             cookiePolicy={"single_host_origin"}
           />
         </div>
-      ) : (
-        ""
       )}
     </div>
   );
