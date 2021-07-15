@@ -20,8 +20,10 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const logout = (response) => {
+  
     dispatch(setSignedIn(false));
     dispatch(setUserData(null));
+   
   };
 
   const handleClick = (e) => {

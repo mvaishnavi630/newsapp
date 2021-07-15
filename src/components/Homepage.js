@@ -14,7 +14,7 @@ const Homepage = () => {
 
   const dispatch = useDispatch();
   const login = (response) => {
-    console.log(response);
+    // console.log(response);
     dispatch(setSignedIn(true));
     dispatch(setUserData(response.profileObj));
   };
