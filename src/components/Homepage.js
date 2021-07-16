@@ -23,10 +23,10 @@ const Homepage = () => {
     <div className="home__page" style={{ display: isSignedIn ? "none" : "" }}>
       {!isSignedIn && (
         <div className="login__message">
-          <h2>Blogs App</h2>
+          <h2>News App</h2>
          
           <p>
-            Website provides high quality online resource for reading blogs. Just sign
+            Website provides high quality online resource for reading news and articles. Just sign
             up and start reading some quality blogs.
           </p>
           <GoogleLogin
