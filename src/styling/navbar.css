@@ -36,9 +36,9 @@
     padding: 12px 25px;
     border-radius: 50px;
     border: none;
-    background: rgb(39, 39, 39);
+    background: white;
     font-family: "Inter";
-    color: white;
+    color: black;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
@@ -55,7 +55,7 @@
     padding: 10px 0px;
     margin: 0px 70px;
     justify-content: space-between;
-    background: rgb(39, 39, 39);
+    background:white;
     border-radius: 5px;
   }
   
@@ -68,7 +68,7 @@
     border: none;
     outline: none;
     font-size: 15px;
-    color: white;
+    color: black;
   }
   
   .submit {
