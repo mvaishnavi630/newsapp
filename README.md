@@ -1,10 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
 
 # Newsapp website
 
@@ -12,7 +5,7 @@ This is a reactjs website
 
 Users can access news and articles. The app uses g-news api for fetching data from differnet news and its uses google user authentication.
 
-[Open Deployed Link](news-app-398b94.netlify.app/)<br />
+[Open Deployed Link](https://news-app-398b94.netlify.app/)<br />
 
 
 # Features and Functionalities
